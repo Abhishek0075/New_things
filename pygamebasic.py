@@ -6,10 +6,11 @@ x,y=250,250
 vel=5
 run=True
 while(run==True):
+	pygame.draw.rect(win,(255,0,0),(100,20,70,70))
+	pygame.display.update()
 	pygame.time.delay(50)
 	for event in pygame.event.get():
 		if(event.type==pygame.QUIT):
-			
 			run=False
 	keys=pygame.key.get_pressed()
 	if keys[pygame.K_LEFT]:
